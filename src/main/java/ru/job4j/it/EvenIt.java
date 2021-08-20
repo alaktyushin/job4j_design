@@ -26,7 +26,7 @@ public class EvenIt implements Iterator<Integer> {
 
     @Override
     public Integer next() {
-        if (numbers.length == 0 || numbers[point] % 2 != 0) {
+        if(!hasNext()) {
             throw new NoSuchElementException();
         }
         return numbers[point++];
