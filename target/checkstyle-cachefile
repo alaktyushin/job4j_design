@@ -1,0 +1,4 @@
+#Tue Aug 24 18:07:43 MSK 2021
+configuration*?=68A0BC0730D283DE9AFC3BC34F9CAFFC395B9643
+module-resource*?\:checkstyle-xpath-suppressions.xml=9661D6ECB98E14B7C9F0AF2D94525618B0924722
+module-resource*?\:checkstyle-suppressions.xml=14554AE3718238D6B44C7E90DC0A51A43EAACE89

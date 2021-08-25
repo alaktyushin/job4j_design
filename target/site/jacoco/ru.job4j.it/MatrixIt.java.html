@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MatrixIt.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">job4j_design</a> &gt; <a href="index.source.html" class="el_package">ru.job4j.it</a> &gt; <span class="el_source">MatrixIt.java</span></div><h1>MatrixIt.java</h1><pre class="source lang-java linenums">package ru.job4j.it;
+
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+public class MatrixIt implements Iterator&lt;Integer&gt; {
+    private final int[][] data;
+<span class="fc" id="L8">    private int row = 0;</span>
+<span class="fc" id="L9">    private int column = 0;</span>
+
+<span class="fc" id="L11">    public MatrixIt(int[][] data) {</span>
+<span class="fc" id="L12">        this.data = data;</span>
+<span class="fc" id="L13">    }</span>
+
+    @Override
+    public boolean hasNext() {
+<span class="fc" id="L17">        boolean rsl = false;</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        while (row &lt; data.length) {</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">            if (data[row].length != 0) {</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">                if (column == data[row].length) {</span>
+<span class="fc" id="L21">                    row++;</span>
+<span class="fc" id="L22">                    column = 0;</span>
+                }
+<span class="fc" id="L24">                rsl = true;</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">                if (column != data[row].length) {</span>
+<span class="fc" id="L26">                    break;</span>
+                }
+            }
+<span class="fc" id="L29">            row++;</span>
+        }
+<span class="fc" id="L31">        return rsl;</span>
+    }
+
+    @Override
+    public Integer next() {
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if (!hasNext()) {</span>
+<span class="fc" id="L37">            throw new NoSuchElementException();</span>
+        }
+<span class="fc" id="L39">        return data[row][column++];</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
