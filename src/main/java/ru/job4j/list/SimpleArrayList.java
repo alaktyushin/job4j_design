@@ -41,10 +41,7 @@ public class SimpleArrayList<T> implements List<T> {
         Objects.checkIndex(index, size);
         modCount++;
         T value = container[index];
-        T[] temp = (T[]) new Object[container.length];
-        System.arraycopy(container, 0, temp, 0, index);
-        System.arraycopy(container, index + 1, temp, index, size - index);
-        container = temp;
+        System.arraycopy(container, index + 1, container, index, size - index);
         container[size] = null;
         size--;
         return value;
@@ -63,19 +60,19 @@ public class SimpleArrayList<T> implements List<T> {
 
     @Override
     public Iterator<T> iterator() {
-        Iterator<T> it = new Iterator<T>() {
+        return new Iterator<T>() {
 
             private int currentIndex = 0;
             private int expectedModCount = modCount;
 
             @Override
             public boolean hasNext() {
-                return currentIndex < size && container[currentIndex] != null;
+                return currentIndex < size;
             }
 
             @Override
             public T next() {
-                if(!hasNext()) {
+                if (!hasNext()) {
                     throw new NoSuchElementException();
                 }
                 if (expectedModCount != modCount) {
@@ -84,6 +81,5 @@ public class SimpleArrayList<T> implements List<T> {
                 return container[currentIndex++];
             }
         };
-        return it;
     }
 }
