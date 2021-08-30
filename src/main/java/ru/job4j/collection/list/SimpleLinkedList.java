@@ -11,13 +11,6 @@ public class SimpleLinkedList<E> implements List<E> {
     private Node<E> first;
     private Node<E> last;
 
-    public SimpleLinkedList() {
-        first = null;
-        last = null;
-        size = 0;
-        modCount = 0;
-    }
-
     @Override
     public void add(E value) {
         if (size == 0) {
