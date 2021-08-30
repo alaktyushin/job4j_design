@@ -32,4 +32,62 @@ public class ForwardLinkedTest {
         Iterator<Integer> it = linked.iterator();
         assertThat(it.next(), is(2));
     }
+
+    @Test
+    public void whenAddFirst() {
+        ForwardLinked<Integer> linked = new ForwardLinked<>();
+        linked.add(1);
+        linked.add(2);
+        linked.addFirst(7);
+        Iterator<Integer> it = linked.iterator();
+        assertThat(it.next(), is(7));
+        assertThat(it.next(), is(1));
+        assertThat(it.next(), is(2));
+    }
+
+    @Test
+    public void whenEmptyAddFirst() {
+        ForwardLinked<Integer> linked = new ForwardLinked<>();
+        linked.addFirst(7);
+        Iterator<Integer> it = linked.iterator();
+        assertThat(it.next(), is(7));
+    }
+
+    @Test
+    public void whenNullAddFirst() {
+        ForwardLinked<Integer> linked = new ForwardLinked<>();
+        linked.add(null);
+        linked.add(1);
+        linked.addFirst(7);
+        Iterator<Integer> it = linked.iterator();
+        assertThat(it.next(), is(7));
+    }
+
+    @Test
+    public void whenDelete() {
+        ForwardLinked<Integer> linked = new ForwardLinked<>();
+        linked.add(4);
+        linked.add(3);
+        linked.add(2);
+        linked.delete();
+        linked.delete();
+        Iterator<Integer> it = linked.iterator();
+        assertThat(it.next(), is(4));
+    }
+
+    @Test (expected = NoSuchElementException.class)
+    public void whenDeleteAll() {
+        ForwardLinked<Integer> linked = new ForwardLinked<>();
+        linked.add(1);
+        linked.add(2);
+        linked.delete();
+        linked.delete();
+        linked.delete();
+    }
+
+    @Test(expected = NoSuchElementException.class)
+    public void whenDeleteEmpty() {
+        ForwardLinked<Integer> linked = new ForwardLinked<>();
+        linked.delete();
+    }
 }
