@@ -1,4 +1,4 @@
-package ru.job4j.collection.list;
+package ru.job4j.collection;
 
 import org.junit.Test;
 import java.util.Iterator;
