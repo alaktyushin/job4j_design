@@ -63,4 +63,14 @@ public class SimpleLinkedList<E> implements List<E> {
             }
         };
     }
+
+    private static class Node<T> {
+        T item;
+        Node<T> next;
+
+        public Node(T value, Node<T> next) {
+            this.item = value;
+            this.next = next;
+        }
+    }
 }
