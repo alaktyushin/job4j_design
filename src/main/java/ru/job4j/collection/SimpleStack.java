@@ -8,7 +8,15 @@ public class SimpleStack<T> {
         return linked.deleteFirst();
     }
 
+    public T popLast() {
+        return linked.delete();
+    }
+
     public void push(T value) {
         linked.addFirst(value);
+    }
+
+    public void pushLast(T value) {
+        linked.add(value);
     }
 }
