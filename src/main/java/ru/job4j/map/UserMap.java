@@ -11,12 +11,10 @@ public class UserMap {
     public static void main(String[] args) {
         User user01 = new User("Ivan", 3, new GregorianCalendar(1991, 01, 01));
         User user02 = new User("Ivan", 3, new GregorianCalendar(1991, 01, 01));
-        User user03 = user02; // Объект не будет помещен в HashMap, так как его ссылка указывает на уже присутствующий ключ user02
         user.put(user01, new Object());
         user.put(user02, new Object());
-        user.put(user03, new Object());
         System.out.println(user);
         // Вывод на печать:
-        // {ru.job4j.map.User@30f39991=java.lang.Object@452b3a41, ru.job4j.map.User@a09ee92=java.lang.Object@4a574795}
+        // {ru.job4j.map.User@7dab128d=java.lang.Object@a09ee92, ru.job4j.map.User@7dab128d=java.lang.Object@30f39991}
     }
 }
