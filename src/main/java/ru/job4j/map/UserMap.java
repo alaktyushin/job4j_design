@@ -15,6 +15,6 @@ public class UserMap {
         user.put(user02, new Object());
         System.out.println(user);
         // Вывод на печать:
-        // {ru.job4j.map.User@30f39991=java.lang.Object@452b3a41, ru.job4j.map.User@a09ee92=java.lang.Object@4a574795}
+        // {ru.job4j.map.User@7dab128d=java.lang.Object@a09ee92}
     }
 }
