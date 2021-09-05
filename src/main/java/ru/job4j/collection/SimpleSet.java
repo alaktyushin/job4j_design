@@ -14,7 +14,9 @@ public class SimpleSet<T> implements Set<T> {
         if (set.size() == 0) {
             set = new SimpleArrayList<>(1);
         }
-        if (contains(value)) return false;
+        if (contains(value)) {
+            return false;
+        }
         set.add(value);
         return true;
     }
@@ -22,7 +24,9 @@ public class SimpleSet<T> implements Set<T> {
     @Override
     public boolean contains(T value) {
         for (T t : set) {
-            if (Objects.equals(t, value)) return true;
+            if (Objects.equals(t, value)) {
+                return true;
+            }
         }
         return false;
     }
