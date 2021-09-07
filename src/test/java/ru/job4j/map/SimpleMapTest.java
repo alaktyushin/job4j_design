@@ -22,12 +22,12 @@ public class SimpleMapTest {
         map.put(4, 400);
         map.put(5, 500);
         map.put(6, 600);
-        map.put(7, 700);
-        map.put(8, 800);
-        map.put(9, 900);
-        map.put(10, 500);
-        map.put(11, 600);
-        map.put(5, 50000);
+        //map.put(7, 700);
+        //map.put(8, 800);
+        //map.put(9, 900);
+        //map.put(10, 500);
+        //map.put(11, 600);
+        //map.put(5, 50000);
     }
 
     @Test
