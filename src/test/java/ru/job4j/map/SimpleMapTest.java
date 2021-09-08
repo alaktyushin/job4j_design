@@ -22,12 +22,14 @@ public class SimpleMapTest {
         map.put(4, 400);
         map.put(5, 500);
         map.put(6, 600);
-        //map.put(7, 700);
-        //map.put(8, 800);
-        //map.put(9, 900);
-        //map.put(10, 500);
-        //map.put(11, 600);
-        //map.put(5, 50000);
+        map.put(7, 700);
+        map.put(8, 800);
+        map.put(9, 900);
+        map.put(10, 500);
+        map.put(11, 600);
+        map.put(5, 50000);
+        assertThat(map.get(11), is (600));
+        assertNull(map.get(12));
     }
 
     @Test
@@ -37,7 +39,7 @@ public class SimpleMapTest {
         map.put(1, 100);
         map.put(2, 200);
         map.put(2, 300);
-        assertThat(map.get(2), is (300));
+        assertThat(map.get(2), is (200));
     }
 
     @Test
@@ -48,8 +50,8 @@ public class SimpleMapTest {
         map.put(0, 500);
         map.put(2, 200);
         map.put(2, 300);
-        assertThat(map.get(2), is (300));
-        assertThat(map.get(0), is (500));
+        assertThat(map.get(2), is (200));
+        assertThat(map.get(0), is (0));
     }
 
     @Test
@@ -60,8 +62,8 @@ public class SimpleMapTest {
         map.put(0, 500);
         map.put(2, 200);
         map.put(2, 300);
-        assertThat(map.get(2), is (300));
-        assertThat(map.get(2), is (300));
+        assertThat(map.get(0), is (0));
+        assertThat(map.get(2), is (200));
     }
 
     @Test
@@ -151,7 +153,7 @@ public class SimpleMapTest {
         Iterator<Integer> it = map.iterator();
         it.next();
         it.next();
-        map.put(2, 2000);
+        map.remove(2);
         it.next();
     }
 }

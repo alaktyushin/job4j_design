@@ -1,47 +1,38 @@
 package ru.job4j.map;
 
-import java.util.ConcurrentModificationException;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Objects;
+import java.util.*;
 
 public class SimpleMap<K, V> implements Map<K, V> {
 
     private static final float LOAD_FACTOR = 0.75f;
-
     private int capacity = 8;
-
     private int count = 0;
-
     private int modCount = 0;
 
     private MapEntry<K, V>[] table = new MapEntry[capacity];
 
     @Override
     public boolean put(K key, V value) {
-        if (count == capacity) {
-            return false;
-        }
         int index = indexFor((int) key);
         if (index != -1) {
-            table[index].value = value;
-        } else {
-            table[count++] = new MapEntry<>(key, value);
+            //System.out.println("Collision with key " + key);
+            return false;
         }
-        modCount++;
-        if (count >= capacity * LOAD_FACTOR) {
+        if (count > capacity * LOAD_FACTOR) {
             expand();
         }
+        table[count++] = new MapEntry<>(key, value);
+        modCount++;
         return true;
     }
 
     private int hash(int hashCode) {
-        return (int) Math.pow(hashCode, 4);
+        return Objects.hash(hashCode) % capacity;
     }
 
     private int indexFor(int hashCode) {
         for (int i = 0; i < count; i++) {
-            if (hash((Integer) table[i].key) == hash(hashCode)) {
+            if (table[i] != null && hash((int) table[i].key) == hash(hashCode)) {
                 return i;
             }
         }
@@ -49,33 +40,34 @@ public class SimpleMap<K, V> implements Map<K, V> {
     }
 
     private void expand() {
-        MapEntry<K, V>[] tempTable = new MapEntry[capacity];
-        System.arraycopy(table, 0, tempTable, 0, table.length);
+        MapEntry<K, V>[] tempTable = new MapEntry[count];
+        for (int i = 0; i < tempTable.length; i++) {
+            tempTable[i] = table[i];
+        }
         capacity = capacity * 2;
         table = new MapEntry[capacity];
-        System.arraycopy(tempTable, 0, table, 0, tempTable.length);
+        for (var pair : tempTable) {
+            if (pair != null) {
+                put(pair.key, pair.value);
+            }
+        }
     }
 
     @Override
     public V get(K key) {
-        for (int i = 0; i < count; i++) {
-            if (table[i].key == key) {
-                return table[i].value;
-            }
-        }
-        return null;
+        int index = indexFor((int) key);
+        return (index == -1) ? null : table[index].value;
     }
 
     @Override
     public boolean remove(K key) {
-        for (int i = 0; i < count; i++) {
-            if (table[i].key == key) {
-                table[i].value = null;
-                modCount++;
-                return true;
-            }
+        int index = indexFor((int) key);
+        if (index == -1) {
+            return false;
         }
-        return false;
+        table[index] = null;
+        modCount++;
+        return true;
     }
 
     @Override
