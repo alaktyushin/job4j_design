@@ -88,6 +88,7 @@ public class SimpleMapTest {
         map.put(1, 100);
         map.remove(0);
         map.put(0, 5);
+        map.put(0, 5);
         assertThat(map.get(0), is(5));
         assertThat(map.get(1), is(100));
     }
@@ -145,15 +146,38 @@ public class SimpleMapTest {
     }
 
     @Test(expected = ConcurrentModificationException.class)
-    public void whenAddAfterGetIteratorThenMustBeException() {
+    public void whenRemoveAfterGetIteratorThenMustBeException() {
         SimpleMap map = new SimpleMap();
         map.put(0, 0);
         map.put(1, 100);
         map.put(2, 200);
         Iterator<Integer> it = map.iterator();
         it.next();
-        it.next();
         map.remove(2);
+        it.next();
+    }
+
+    @Test
+    public void whenAddDoubledAfterGetIteratorThenMustBeNoException() {
+        SimpleMap map = new SimpleMap();
+        map.put(0, 0);
+        map.put(1, 100);
+        map.put(2, 200);
+        Iterator<Integer> it = map.iterator();
+        it.next();
+        map.put(0, 0);
+        it.next();
+    }
+
+    @Test(expected = ConcurrentModificationException.class)
+    public void whenAddUniqueAfterGetIteratorThenMustBeNoException() {
+        SimpleMap map = new SimpleMap();
+        map.put(0, 0);
+        map.put(1, 100);
+        map.put(2, 200);
+        Iterator<Integer> it = map.iterator();
+        it.next();
+        map.put(3, 0);
         it.next();
     }
 }

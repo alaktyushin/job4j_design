@@ -13,37 +13,28 @@ public class SimpleMap<K, V> implements Map<K, V> {
 
     @Override
     public boolean put(K key, V value) {
-        int index = indexFor((int) key);
-        if (index != -1) {
-            //System.out.println("Collision with key " + key);
-            return false;
-        }
+        int index = indexFor(hash(key.hashCode()));
         if (count > capacity * LOAD_FACTOR) {
             expand();
         }
-        table[count++] = new MapEntry<>(key, value);
-        modCount++;
+        if (Objects.equals(table[index], null)) {
+            table[index] = new MapEntry<>(key, value);
+            count++;
+            modCount++;
+        }
         return true;
     }
 
     private int hash(int hashCode) {
-        return Objects.hash(hashCode) % capacity;
+        return Math.abs(Objects.hash(hashCode) - 31);
     }
 
-    private int indexFor(int hashCode) {
-        for (int i = 0; i < count; i++) {
-            if (table[i] != null && hash((int) table[i].key) == hash(hashCode)) {
-                return i;
-            }
-        }
-        return -1;
+    private int indexFor(int hash) {
+        return hash % table.length;
     }
 
     private void expand() {
-        MapEntry<K, V>[] tempTable = new MapEntry[count];
-        for (int i = 0; i < tempTable.length; i++) {
-            tempTable[i] = table[i];
-        }
+        MapEntry<K, V>[] tempTable = table;
         capacity = capacity * 2;
         table = new MapEntry[capacity];
         for (var pair : tempTable) {
@@ -55,17 +46,18 @@ public class SimpleMap<K, V> implements Map<K, V> {
 
     @Override
     public V get(K key) {
-        int index = indexFor((int) key);
-        return (index == -1) ? null : table[index].value;
+        int index = indexFor(hash(key.hashCode()));
+        return (!Objects.equals(table[index], null)) ? table[index].value : null;
     }
 
     @Override
     public boolean remove(K key) {
-        int index = indexFor((int) key);
-        if (index == -1) {
+        int index = indexFor(hash(key.hashCode()));
+        if (Objects.equals(table[index], null)) {
             return false;
         }
         table[index] = null;
+        count--;
         modCount++;
         return true;
     }
