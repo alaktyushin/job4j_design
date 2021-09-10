@@ -20,8 +20,12 @@ public class AutoNumber {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         AutoNumber that = (AutoNumber) o;
         return regionCode == that.regionCode && number.equals(that.number) && colour == that.colour;
     }
