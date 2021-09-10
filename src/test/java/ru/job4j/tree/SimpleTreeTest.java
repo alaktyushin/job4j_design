@@ -8,6 +8,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class SimpleTreeTest {
+
     @Test
     public void when6ElFindLastThen6() {
         Tree<Integer> tree = new SimpleTree<>(1);
