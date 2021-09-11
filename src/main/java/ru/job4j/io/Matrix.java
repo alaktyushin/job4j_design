@@ -4,7 +4,7 @@ import java.io.FileOutputStream;
 
 public class Matrix {
     public static int[][] multiple(int size, String name) {
-        int[][] data = new int[0][];
+        int[][] data = new int[size][size];
         try (FileOutputStream out = new FileOutputStream(name)) {
             data = new int[size][size];
             for (int row = 0; row < data.length; row++) {
