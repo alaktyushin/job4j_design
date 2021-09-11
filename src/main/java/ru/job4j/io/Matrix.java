@@ -3,6 +3,7 @@ package ru.job4j.io;
 import java.io.FileOutputStream;
 
 public class Matrix {
+
     public static int[][] multiple(int size, String name) {
         int[][] data = new int[size][size];
         try (FileOutputStream out = new FileOutputStream(name)) {
