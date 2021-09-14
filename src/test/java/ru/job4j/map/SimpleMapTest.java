@@ -13,6 +13,15 @@ import static org.junit.Assert.*;
 public class SimpleMapTest {
 
     @Test
+    public void putTrueFalse() {
+        SimpleMap map = new SimpleMap();
+        map.put(0, 0);
+        map.put(1, 100);
+        assertTrue(map.put(2, 200));
+        assertFalse(map.put(0, 300));
+    }
+
+    @Test
     public void putAllDifferentThenExpand() {
         SimpleMap map = new SimpleMap();
         map.put(0, 0);
@@ -115,7 +124,6 @@ public class SimpleMapTest {
         it.next();
         it.next();
         it.next();
-        assertTrue(it.hasNext());
         it.next();
         assertTrue(it.hasNext());
         it.next();

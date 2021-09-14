@@ -16,7 +16,9 @@ public class EvenNumberFile {
             //System.out.println(text);
             //int[] numbers = text.chars().toArray();
             int[] numbers = text.codePoints().toArray();
-            for (var i : numbers) System.out.println(i);
+            for (var i : numbers) {
+                System.out.println(i);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
