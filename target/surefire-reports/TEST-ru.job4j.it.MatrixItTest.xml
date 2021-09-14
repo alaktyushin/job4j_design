@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="ru.job4j.it.MatrixItTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="ru.job4j.it.MatrixItTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.2+7-67"/>
-    <property name="sun.boot.library.path" value="/Users/lan/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home/lib"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home/lib"/>
     <property name="maven.multiModuleProjectDirectory" value="/Users/lan/IdeaProjects/job4j_design"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -18,7 +18,7 @@
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="16.0.2+7-67"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/65/ldx7lkfn2j942x536jbph4l40000gn/T/"/>
+    <property name="java.io.tmpdir" value="/var/folders/61/5p_mzt9j0fl5llqq5wqfzyh40000gn/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -42,8 +42,8 @@
     <property name="java.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 verify"/>
-    <property name="java.home" value="/Users/lan/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 install"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
@@ -58,12 +58,12 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="ru.job4j.it.MatrixItTest" name="whenNoElements" time="0.002"/>
+  <testcase classname="ru.job4j.it.MatrixItTest" name="whenNoElements" time="0.001"/>
   <testcase classname="ru.job4j.it.MatrixItTest" name="whenEmpty" time="0"/>
-  <testcase classname="ru.job4j.it.MatrixItTest" name="whenFirstEmptyThenHashNext" time="0.001"/>
-  <testcase classname="ru.job4j.it.MatrixItTest" name="whenRowHasDiffSize" time="0"/>
+  <testcase classname="ru.job4j.it.MatrixItTest" name="whenFirstEmptyThenHashNext" time="0"/>
+  <testcase classname="ru.job4j.it.MatrixItTest" name="whenRowHasDiffSize" time="0.001"/>
   <testcase classname="ru.job4j.it.MatrixItTest" name="whenFirstEmptyThenNext" time="0"/>
-  <testcase classname="ru.job4j.it.MatrixItTest" name="whenFewEmpty" time="0.001"/>
+  <testcase classname="ru.job4j.it.MatrixItTest" name="whenFewEmpty" time="0"/>
   <testcase classname="ru.job4j.it.MatrixItTest" name="whenMultiHashNext" time="0"/>
   <testcase classname="ru.job4j.it.MatrixItTest" name="when4El" time="0"/>
   <testcase classname="ru.job4j.it.MatrixItTest" name="whenEmptyThenNext" time="0"/>

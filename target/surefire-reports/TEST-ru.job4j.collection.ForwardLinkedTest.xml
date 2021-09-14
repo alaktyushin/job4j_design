@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="ru.job4j.it.ArrayItTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="ru.job4j.collection.ForwardLinkedTest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -58,7 +58,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenMultiCallhasNextThenTrue" time="0.001"/>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenReadSequence" time="0"/>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenNextFromEmpty" time="0"/>
+  <testcase classname="ru.job4j.collection.ForwardLinkedTest" name="whenNullAddFirst" time="0"/>
+  <testcase classname="ru.job4j.collection.ForwardLinkedTest" name="whenDeleteEmptyLinked" time="0"/>
+  <testcase classname="ru.job4j.collection.ForwardLinkedTest" name="whenEmptyAddFirst" time="0"/>
+  <testcase classname="ru.job4j.collection.ForwardLinkedTest" name="whenAddFirst" time="0.001"/>
+  <testcase classname="ru.job4j.collection.ForwardLinkedTest" name="whenDeleteFirst" time="0"/>
+  <testcase classname="ru.job4j.collection.ForwardLinkedTest" name="whenMultiDelete" time="0"/>
 </testsuite>

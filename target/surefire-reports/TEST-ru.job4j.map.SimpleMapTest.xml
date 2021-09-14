@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="ru.job4j.it.ArrayItTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="14" failures="0" name="ru.job4j.map.SimpleMapTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -58,7 +58,18 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenMultiCallhasNextThenTrue" time="0.001"/>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenReadSequence" time="0"/>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenNextFromEmpty" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="putAllDifferentThenExpand" time="0.001"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="iteratorNoSuchElement" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="getIfEmpty" time="0.001"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="removeIfEmpty" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="whenRemoveAfterGetIteratorThenMustBeException" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="remove" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="putTrueFalse" time="0.001"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="removeThenPut" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="get2times" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="whenAddDoubledAfterGetIteratorThenMustBeNoException" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="putDoubledKey" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="put2DoubledKeys" time="0"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="iterator" time="0.001"/>
+  <testcase classname="ru.job4j.map.SimpleMapTest" name="whenAddUniqueAfterGetIteratorThenMustBeNoException" time="0"/>
 </testsuite>

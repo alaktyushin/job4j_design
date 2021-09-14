@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="ru.job4j.it.ArrayItTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="ru.job4j.question.AnalyzeTest" time="0.005" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -58,7 +58,11 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenMultiCallhasNextThenTrue" time="0.001"/>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenReadSequence" time="0"/>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenNextFromEmpty" time="0"/>
+  <testcase classname="ru.job4j.question.AnalyzeTest" name="whenOneChanged" time="0.003"/>
+  <testcase classname="ru.job4j.question.AnalyzeTest" name="whenOneAdded" time="0"/>
+  <testcase classname="ru.job4j.question.AnalyzeTest" name="whenAddedAnd2ChangedAndDeleted" time="0.001"/>
+  <testcase classname="ru.job4j.question.AnalyzeTest" name="whenOneDeleted" time="0"/>
+  <testcase classname="ru.job4j.question.AnalyzeTest" name="whenAllChanged" time="0"/>
+  <testcase classname="ru.job4j.question.AnalyzeTest" name="whenNotChanged" time="0"/>
+  <testcase classname="ru.job4j.question.AnalyzeTest" name="whenAddedAndChangedAndDeleted" time="0.001"/>
 </testsuite>

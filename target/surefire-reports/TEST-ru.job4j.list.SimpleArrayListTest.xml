@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="ru.job4j.it.ArrayItTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="16" failures="0" name="ru.job4j.list.SimpleArrayListTest" time="0.008" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -58,7 +58,20 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenMultiCallhasNextThenTrue" time="0.001"/>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenReadSequence" time="0"/>
-  <testcase classname="ru.job4j.it.ArrayItTest" name="whenNextFromEmpty" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenNoPlaceThenMustIncreaseCapacity" time="0.002"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenCheckIterator" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenRemoveAfterGetIteratorThenMustBeException" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenAddAndGetByCorrectIndex" time="0.001"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenAddThenSizeIncrease" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenGetIteratorFromEmptyListThenNextThrowException" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenAddAfterGetIteratorThenMustBeException" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenRemoveThenGetValueAndSizeDecrease" time="0.001"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenAddNullThenMustBeSameBehavior" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenGetIteratorTwiceThenStartAlwaysFromBeginning" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenRemoveByIncorrectIndexThenGetException" time="0.001"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenSetByIncorrectIndexThenGetException" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenAddAndGetByIncorrectIndexThenGetException" time="0.001"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenSetThenGetOldValueAndSizeNotChanged" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenRemoveThenMustNotBeEmpty" time="0"/>
+  <testcase classname="ru.job4j.list.SimpleArrayListTest" name="whenGetIteratorFromEmptyListThenHasNextReturnFalse" time="0.002"/>
 </testsuite>
