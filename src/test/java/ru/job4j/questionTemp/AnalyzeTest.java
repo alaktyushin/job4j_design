@@ -1,7 +1,6 @@
-package ru.job4j.question;
+package ru.job4j.questionTemp;
 
 import org.junit.Test;
-
 import java.util.Set;
 
 import static org.hamcrest.MatcherAssert.assertThat;
