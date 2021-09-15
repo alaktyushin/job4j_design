@@ -1,8 +1,6 @@
 package ru.job4j.io;
 
 import java.io.FileInputStream;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class EvenNumberFile {
 
@@ -13,14 +11,25 @@ public class EvenNumberFile {
             while ((read = in.read()) != -1) {
                 text.append((char) read);
             }
-            //System.out.println(text);
-            //int[] numbers = text.chars().toArray();
-            int[] numbers = text.codePoints().toArray();
-            for (var i : numbers) {
-                System.out.println(i);
+            String[] str = text.toString().split("\n");
+            int[] ints = new int[str.length];
+            for (int i = 0; i < ints.length; i++) {
+                ints[i] = Integer.parseInt(str[i]);
+                System.out.print("Number " + ints[i] + " is ");
+                System.out.println((ints[i] % 2 == 0) ? "even." : "not even.");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
+
+// file "even.txt":
+// 1
+// 5
+// 15
+// 17
+// 2
+// 4
+// 16
+// 19
