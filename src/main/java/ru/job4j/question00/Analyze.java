@@ -1,4 +1,4 @@
-package ru.job4j.questionTemp;
+package ru.job4j.question00;
 
 import java.util.*;
 import java.util.stream.Collectors;
