@@ -1,12 +1,13 @@
 package ru.job4j.io;
 
 import java.io.*;
+import java.util.LinkedList;
 import java.util.List;
 
 public class LogFilter {
 
     public static List<String> filter(String file) {
-        List<String> stringList = null;
+        List<String> stringList = new LinkedList<>();
         try (BufferedReader in = new BufferedReader(new FileReader(file))) {
             stringList = in
                     .lines()
