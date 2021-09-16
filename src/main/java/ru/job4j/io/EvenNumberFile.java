@@ -11,7 +11,7 @@ public class EvenNumberFile {
             while ((read = in.read()) != -1) {
                 text.append((char) read);
             }
-            String[] str = text.toString().split("\n");
+            String[] str = text.toString().split(System.lineSeparator());
             int[] ints = new int[str.length];
             for (int i = 0; i < ints.length; i++) {
                 ints[i] = Integer.parseInt(str[i]);
