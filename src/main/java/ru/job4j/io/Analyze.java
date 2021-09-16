@@ -1,6 +1,7 @@
 package ru.job4j.io;
 
 import java.io.*;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Analyze {
@@ -8,7 +9,7 @@ public class Analyze {
     public static void unavailable(String source, String target) {
         String beginning = "";
         String end;
-        List<String> stringList = null;
+        List<String> stringList = new LinkedList<>();
         try (BufferedReader read = new BufferedReader(new FileReader(source))) {
             stringList = read
                     .lines()
