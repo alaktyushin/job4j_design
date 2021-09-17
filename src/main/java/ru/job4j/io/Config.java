@@ -24,7 +24,10 @@ public class Config {
                     .collect(Collectors.toMap(
                             k -> {
                                 if (k.split("=").length < 2) {
-                                    throw new IllegalArgumentException("Missing key or value!");
+                                    throw new IllegalArgumentException("Missing value!");
+                                }
+                                if (k.split("=")[0].length() == 0) {
+                                    throw new IllegalArgumentException("Missing key!");
                                 }
                                 return k.split("=")[0];
                             },

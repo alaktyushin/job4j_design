@@ -48,4 +48,11 @@ public class ConfigTest {
         Config config = new Config(path);
         config.load();
     }
+
+    @Test (expected = IllegalArgumentException.class)
+    public void whenPairWithoutKey() {
+        String path = "./data/pair_without_key.properties";
+        Config config = new Config(path);
+        config.load();
+    }
 }
