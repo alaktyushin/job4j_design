@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="ru.job4j.it.ListUtilsTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="ru.job4j.it.ListUtilsTest" time="0.007" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2021.2.1"/>
+    <property name="idea.version" value="2021.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.2+7-67"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home/lib"/>
@@ -42,7 +42,7 @@
     <property name="java.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.2 verify"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -58,14 +58,14 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="ru.job4j.it.ListUtilsTest" name="whenRemoveIfEven" time="0.001"/>
+  <testcase classname="ru.job4j.it.ListUtilsTest" name="whenRemoveIfEven" time="0.002"/>
   <testcase classname="ru.job4j.it.ListUtilsTest" name="whenAddBeforeWithInvalidIndex" time="0.001"/>
-  <testcase classname="ru.job4j.it.ListUtilsTest" name="whenRemoveAllIfFoundAndNotFound" time="0"/>
+  <testcase classname="ru.job4j.it.ListUtilsTest" name="whenRemoveAllIfFoundAndNotFound" time="0.001"/>
   <testcase classname="ru.job4j.it.ListUtilsTest" name="whenReplaceIfEven" time="0.001"/>
   <testcase classname="ru.job4j.it.ListUtilsTest" name="whenAddBefore" time="0"/>
   <testcase classname="ru.job4j.it.ListUtilsTest" name="whenRemoveAllIfEquals" time="0"/>
   <testcase classname="ru.job4j.it.ListUtilsTest" name="whenAddAfterLast" time="0"/>
   <testcase classname="ru.job4j.it.ListUtilsTest" name="whenReplaceIfEquals" time="0.001"/>
-  <testcase classname="ru.job4j.it.ListUtilsTest" name="whenRemoveIfEquals" time="0"/>
+  <testcase classname="ru.job4j.it.ListUtilsTest" name="whenRemoveIfEquals" time="0.001"/>
   <testcase classname="ru.job4j.it.ListUtilsTest" name="whenRemoveAllIfEmptyList" time="0"/>
 </testsuite>

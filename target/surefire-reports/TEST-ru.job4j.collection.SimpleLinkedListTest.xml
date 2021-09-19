@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="ru.job4j.collection.SimpleLinkedListTest" time="0.005" errors="0" skipped="0">
+<testsuite tests="11" failures="0" name="ru.job4j.collection.SimpleLinkedListTest" time="0.002" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2021.2.1"/>
+    <property name="idea.version" value="2021.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.2+7-67"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home/lib"/>
@@ -42,7 +42,7 @@
     <property name="java.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.2 verify"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -60,11 +60,11 @@
   </properties>
   <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenCheckIterator" time="0.001"/>
   <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenAddThenSizeIncrease" time="0"/>
-  <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenGetFromOutOfBoundThenExceptionThrown" time="0.001"/>
-  <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenGetIteratorFromEmptyListThenNextThrowException" time="0.001"/>
+  <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenGetFromOutOfBoundThenExceptionThrown" time="0"/>
+  <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenGetIteratorFromEmptyListThenNextThrowException" time="0"/>
   <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenGetIteratorFromNullThenHasNextReturnFalse" time="0"/>
   <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenAddAfterGetIteratorThenMustBeException" time="0"/>
-  <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenAddAndGet" time="0.001"/>
+  <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenAddAndGet" time="0"/>
   <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenGetIteratorTwiceThenStartAlwaysFromBeginning" time="0"/>
   <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenAddNullThenMustGrow" time="0"/>
   <testcase classname="ru.job4j.collection.SimpleLinkedListTest" name="whenGetIteratorTwiceThenEveryFromBegin" time="0.001"/>
