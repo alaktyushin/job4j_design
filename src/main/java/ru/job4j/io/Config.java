@@ -23,13 +23,14 @@ public class Config {
                     .filter(l -> !l.contains("#") && !l.equals(""))
                     .collect(Collectors.toMap(
                             k -> {
-                                if (k.split("=").length < 2) {
+                                String[] str = k.split("=");
+                                if (str.length < 2) {
                                     throw new IllegalArgumentException("Missing value!");
                                 }
-                                if (k.split("=")[0].length() == 0) {
+                                if (str[0].length() == 0) {
                                     throw new IllegalArgumentException("Missing key!");
                                 }
-                                return k.split("=")[0];
+                                return str[0];
                             },
                             v -> v.split("=")[1]))
             );
