@@ -56,11 +56,11 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="ru.job4j.it.FlatMapTest" name="whenSeveralEmptyThenReturnFalse" time="0.001"/>
+  <testcase classname="ru.job4j.it.FlatMapTest" name="whenSeveralEmptyThenReturnFalse" time="0"/>
   <testcase classname="ru.job4j.it.FlatMapTest" name="whenMultiHasNext" time="0"/>
   <testcase classname="ru.job4j.it.FlatMapTest" name="whenEmpty" time="0"/>
   <testcase classname="ru.job4j.it.FlatMapTest" name="whenSeveralEmptyAndNotEmpty" time="0"/>
   <testcase classname="ru.job4j.it.FlatMapTest" name="whenHasNextFalse" time="0"/>
   <testcase classname="ru.job4j.it.FlatMapTest" name="whenDiffNext" time="0"/>
-  <testcase classname="ru.job4j.it.FlatMapTest" name="whenSeqNext" time="0"/>
+  <testcase classname="ru.job4j.it.FlatMapTest" name="whenSeqNext" time="0.001"/>
 </testsuite>

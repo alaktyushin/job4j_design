@@ -56,7 +56,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="ru.job4j.collection.SimpleStackTest" name="whenPushThenPoll" time="0.001"/>
-  <testcase classname="ru.job4j.collection.SimpleStackTest" name="whenPushPollThenPushPoll" time="0"/>
+  <testcase classname="ru.job4j.collection.SimpleStackTest" name="whenPushThenPoll" time="0"/>
+  <testcase classname="ru.job4j.collection.SimpleStackTest" name="whenPushPollThenPushPoll" time="0.001"/>
   <testcase classname="ru.job4j.collection.SimpleStackTest" name="whenPushPushThenPollPoll" time="0"/>
 </testsuite>

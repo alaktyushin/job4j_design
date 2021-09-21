@@ -58,7 +58,7 @@
   </properties>
   <testcase classname="ru.job4j.collection.SimpleQueueTest" name="whenPushPoll" time="0.001"/>
   <testcase classname="ru.job4j.collection.SimpleQueueTest" name="whenEmptyPoll" time="0"/>
-  <testcase classname="ru.job4j.collection.SimpleQueueTest" name="when2PushPoll" time="0"/>
-  <testcase classname="ru.job4j.collection.SimpleQueueTest" name="whenPushPushPollAndPush" time="0.001"/>
+  <testcase classname="ru.job4j.collection.SimpleQueueTest" name="when2PushPoll" time="0.001"/>
+  <testcase classname="ru.job4j.collection.SimpleQueueTest" name="whenPushPushPollAndPush" time="0"/>
   <testcase classname="ru.job4j.collection.SimpleQueueTest" name="when2PushPollPushPoll" time="0"/>
 </testsuite>

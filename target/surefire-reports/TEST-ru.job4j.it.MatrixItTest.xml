@@ -58,8 +58,8 @@
   </properties>
   <testcase classname="ru.job4j.it.MatrixItTest" name="whenNoElements" time="0.001"/>
   <testcase classname="ru.job4j.it.MatrixItTest" name="whenEmpty" time="0"/>
-  <testcase classname="ru.job4j.it.MatrixItTest" name="whenFirstEmptyThenHashNext" time="0"/>
-  <testcase classname="ru.job4j.it.MatrixItTest" name="whenRowHasDiffSize" time="0.001"/>
+  <testcase classname="ru.job4j.it.MatrixItTest" name="whenFirstEmptyThenHashNext" time="0.001"/>
+  <testcase classname="ru.job4j.it.MatrixItTest" name="whenRowHasDiffSize" time="0"/>
   <testcase classname="ru.job4j.it.MatrixItTest" name="whenFirstEmptyThenNext" time="0"/>
   <testcase classname="ru.job4j.it.MatrixItTest" name="whenFewEmpty" time="0"/>
   <testcase classname="ru.job4j.it.MatrixItTest" name="whenMultiHashNext" time="0"/>
