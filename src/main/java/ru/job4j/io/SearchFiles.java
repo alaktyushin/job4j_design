@@ -6,7 +6,6 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 import static java.nio.file.FileVisitResult.CONTINUE;
 
@@ -20,10 +19,7 @@ public class SearchFiles implements FileVisitor<Path> {
     }
 
     public List<Path> getPaths() {
-        return paths
-                .stream()
-                .filter(condition)
-                .collect(Collectors.toList());
+        return paths;
     }
 
     @Override
@@ -33,7 +29,9 @@ public class SearchFiles implements FileVisitor<Path> {
 
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
-        paths.add(file.toAbsolutePath());
+        if (condition.test(file)) {
+            paths.add(file.toAbsolutePath());
+        }
         return CONTINUE;
     }
 
