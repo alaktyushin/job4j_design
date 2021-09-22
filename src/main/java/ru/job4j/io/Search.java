@@ -11,7 +11,7 @@ import java.util.function.Predicate;
 public class Search {
     public static void main(String[] args) throws IOException {
         if (args.length < 2) {
-            throw new IllegalArgumentException("Missing arguments. Usage: java -jar dir.jar ROOT_FOLDER EXTENSION.");
+            throw new IllegalArgumentException("Missing arguments. Usage: java -jar Search.jar ROOT_FOLDER EXTENSION.");
         }
         Path start = Path.of(args[0]);
         String extension = args[1];
