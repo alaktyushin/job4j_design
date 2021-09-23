@@ -36,7 +36,7 @@ public class Zip {
     }
 
     public static void main(String[] args) throws IOException {
-        if (args.length < 3) {
+        if (args.length != 3) {
             throw new IllegalArgumentException("Missing arguments.");
         }
         ArgsName argsName = ArgsName.of(args);
