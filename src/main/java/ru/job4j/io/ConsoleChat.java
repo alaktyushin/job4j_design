@@ -28,6 +28,7 @@ public class ConsoleChat {
         String q;
         String a;
         boolean flag = true;
+        readPhrases();
         do {
             q = consoleInput();
             log.add("q: " + q);
@@ -39,6 +40,7 @@ public class ConsoleChat {
                 log.add("a: " + a);
             }
         } while (!q.toLowerCase(Locale.ROOT).equals(OUT));
+        saveLog(log);
     }
 
     private List<String> readPhrases() {
@@ -81,8 +83,6 @@ public class ConsoleChat {
         //working directory: /Users/lan/IdeaProjects/job4j_design/src/data
         validateArgs(args);
         ConsoleChat cc = new ConsoleChat(path, botAnswers);
-        cc.readPhrases();
         cc.run();
-        cc.saveLog(log);
     }
 }
