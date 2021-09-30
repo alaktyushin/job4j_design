@@ -152,3 +152,8 @@
 /.idea/vcs.xml
 /.idea/workspace.xml
 /target/classes/ru/job4j/io/Zip.class
+/target/classes/ru/job4j/io/CSVReader.class
+/target/test-classes/ru/job4j/io/CSVReaderTest.class
+/target/classes/ru/job4j/io/scanner/ScannerExample1.class
+/target/classes/ru/job4j/io/scanner/ScannerExample2.class
+/target/classes/ru/job4j/io/scanner/ScannerExample3.class
