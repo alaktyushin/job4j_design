@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ScannerExample3 {
     public static void main(String[] args) throws Exception {
         var data = "A 1B FF 110";
-        var file = File.createTempFile("data", null);
+        var file = File.createTempFile("data", "txt");
         try (BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(file))) {
             out.write(data.getBytes());
         }
