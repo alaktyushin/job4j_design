@@ -17,10 +17,17 @@ public class EchoServer {
                     while (in.ready()) {
                         str = in.readLine();
                         System.out.println(str);
-                        if (str.contains("?msg=Bye")) {
+                        if (str.contains("?msg=Exit")) {
                             out.write("Bye-bye!".getBytes());
                             server.close();
+                            break;
                         }
+                        if (str.contains("?msg=Hello")) {
+                            out.write("Hello, dear friend!".getBytes());
+                        } else {
+                            out.write("What?".getBytes());
+                        }
+                        break;
                     }
                     out.flush();
                 }
