@@ -4,9 +4,16 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class EchoServer {
-    public static void main(String[] args) throws IOException {
-        try (ServerSocket server = new ServerSocket(9000)) {
+
+    private static final Logger LOG = LoggerFactory.getLogger(UsageLog4j.class.getName());
+    private static int port = 9000;
+
+    public static void main(String[] args) {
+        try (ServerSocket server = new ServerSocket(port)) {
             while (!server.isClosed()) {
                 Socket socket = server.accept();
                 try (OutputStream out = socket.getOutputStream();
@@ -16,7 +23,7 @@ public class EchoServer {
                     String str;
                     while (in.ready()) {
                         str = in.readLine();
-                        System.out.println(str);
+                        LOG.info(str);
                         if (str.contains("?msg=Exit")) {
                             out.write("Bye-bye!".getBytes());
                             server.close();
@@ -32,6 +39,8 @@ public class EchoServer {
                     out.flush();
                 }
             }
-        }
+        } catch (Exception e) {
+            LOG.error("Exception in log example", e);
+       }
     }
 }
