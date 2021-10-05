@@ -19,4 +19,16 @@ public class BankAccount {
                 + ", isActive=" + isActive
                 + '}';
     }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public char getCurrency() {
+        return currency;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
 }
