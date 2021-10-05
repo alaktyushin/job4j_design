@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 public class BankClient {

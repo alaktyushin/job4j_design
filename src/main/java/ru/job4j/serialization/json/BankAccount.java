@@ -1,6 +1,5 @@
 package ru.job4j.serialization.json;
 
-
 public class BankAccount {
     private final String number;
     private final char currency;
