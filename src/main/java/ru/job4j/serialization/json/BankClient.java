@@ -2,6 +2,8 @@ package ru.job4j.serialization.json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.json.JSONObject;
+import org.json.XML;
 
 import java.util.Arrays;
 import java.util.List;
@@ -55,6 +57,13 @@ public class BankClient {
         final BankClient bankClient = gson.fromJson(gsonStr, BankClient.class);
         System.out.println("Record converted from gson:");
         System.out.println(bankClient);
+        System.out.println();
+
+        /* Преобразуем json-строку в XML-строку. */
+        final JSONObject json = new JSONObject(gsonStr);
+        final String xml = XML.toString(json);
+        System.out.println("XML-record converted from gson:");
+        System.out.println(xml);
         System.out.println();
     }
 }
