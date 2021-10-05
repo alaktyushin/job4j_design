@@ -1,7 +1,6 @@
 package ru.job4j.serialization.xml;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class BankAccount {
@@ -17,7 +16,6 @@ public class BankAccount {
         this.currency = currency;
         this.isActive = isActive;
     }
-
 
     @Override
     public String toString() {

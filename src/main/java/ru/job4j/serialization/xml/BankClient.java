@@ -1,10 +1,5 @@
 package ru.job4j.serialization.xml;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import org.json.JSONObject;
-import org.json.XML;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -66,27 +61,6 @@ public class BankClient {
                 List.of(account1, account2), List.of(address1, address2));
         System.out.println(client);
         System.out.println();
-
-        /* Преобразуем объект person в json-строку.
-        Gson gson = new GsonBuilder().create();
-        String gsonStr = gson.toJson(client);
-        System.out.println("Record converted to gson:");
-        System.out.println(gsonStr);
-        System.out.println();
-
-        /* Преобразуем json-строку в объект.
-        BankClient bankClient = gson.fromJson(gsonStr, BankClient.class);
-        System.out.println("Record converted from gson:");
-        System.out.println(bankClient);
-        System.out.println();
-
-        * Преобразуем json-строку в XML-строку.
-        JSONObject json = new JSONObject(gsonStr);
-        String xmlToJson = XML.toString(json);
-        System.out.println("XML-record converted from gson:");
-        System.out.println(xmlToJson);
-        System.out.println();
-         */
 
         /* Маршалинг в XML и обратно. */
         JAXBContext context = JAXBContext.newInstance(BankClient.class);
