@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person name="Petr Arsentev" age="33">
+    <phones>+7000000</phones>
+    <phones>+7000001</phones>
+    <bankAccounts>
+        <number>1000-2000-3000-4000</number>
+        <currency>82</currency>
+        <isActive>true</isActive>
+    </bankAccounts>
+    <bankAccounts>
+        <number>1000-2000-3000-4001</number>
+        <currency>85</currency>
+        <isActive>false</isActive>
+    </bankAccounts>
+    <addresses>100100, Moscow, Pushkina str, 1, 18</addresses>
+    <addresses>200200, Bryansk, Kalinina pr, 2, 28</addresses>
+</person>
