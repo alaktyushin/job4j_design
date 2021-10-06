@@ -1,11 +1,10 @@
 package ru.job4j.serialization.json;
 
-import org.json.JSONObject;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class BankClient {
     private final String name;
@@ -13,26 +12,6 @@ public class BankClient {
     private final String[] phones;
     private final List<BankAccount> bankAccounts;
     private final List<String> addresses;
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String[] getPhones() {
-        return phones;
-    }
-
-    public List<BankAccount> getBankAccounts() {
-        return bankAccounts;
-    }
-
-    public List<String> getAddresses() {
-        return addresses;
-    }
 
     public BankClient(String name, int age, String[] phones, List<BankAccount> bankAccounts, List<String> addresses) {
         this.name = name;
@@ -52,17 +31,18 @@ public class BankClient {
         System.out.println(client);
         System.out.println();
 
-        final Map<String, Object> jsonMap = new HashMap<>();
-        jsonMap.put("name", client.getName());
-        jsonMap.put("age", String.valueOf(client.getAge()));
-        jsonMap.put("phones", Arrays.stream(client.getPhones()).toList());
-        jsonMap.put("addresses", client.getAddresses());
-        jsonMap.put("bankAccounts", client.getBankAccounts());
-        System.out.println(jsonMap);
+        /* Преобразуем объект person в json-строку. */
+        final Gson gson = new GsonBuilder().create();
+        final String gsonStr = gson.toJson(client);
+        System.out.println("Record converted to gson:");
+        System.out.println(gsonStr);
+        System.out.println();
 
-        final JSONObject jsonObject = new JSONObject(client);
-        System.out.println(jsonObject);
-        System.out.println(new JSONObject(client));
+        /* Преобразуем json-строку в объект. */
+        final BankClient bankClient = gson.fromJson(gsonStr, BankClient.class);
+        System.out.println("Record converted from gson:");
+        System.out.println(bankClient);
+        System.out.println();
     }
 
     @Override
