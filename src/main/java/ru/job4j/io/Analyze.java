@@ -16,7 +16,6 @@ public class Analyze {
                     .toList();
         } catch (IOException e) {
             System.out.println("File not found: " + source);
-            //e.printStackTrace();
         }
         try (PrintWriter out = new PrintWriter(
                 new BufferedOutputStream(

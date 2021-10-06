@@ -36,7 +36,6 @@ public class Config {
             );
         } catch (IOException e) {
             System.out.println("File not found: " + path);
-            //e.printStackTrace();
         }
     }
 

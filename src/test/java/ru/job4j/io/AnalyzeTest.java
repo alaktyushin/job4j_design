@@ -98,7 +98,7 @@ public class AnalyzeTest {
         File source = tempFolder.newFile("unavailable.csv");
         File target = tempFolder.newFile("target.txt");
         try (PrintWriter out = new PrintWriter(source)) {
-            //nothing to log
+            /*nothing to log*/
         }
         Analyze.unavailable(source.getAbsolutePath(), target.getAbsolutePath());
         List<String> list;

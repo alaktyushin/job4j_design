@@ -35,11 +35,6 @@ public class AutoNumber {
         return number.chars().sum() * regionCode * colour.toString().chars().sum();
     }
 
-    //@Override
-    //public int hashCode() {
-    //    return Objects.hash(number, regionCode, colour);
-    //}
-
     public static void main(String[] args) {
         AutoNumber number1 = new AutoNumber("x555mk", (short) 77, Colour.WHITE);
         AutoNumber number2 = new AutoNumber("x5555", (short) 77, Colour.BLUE);

@@ -79,8 +79,6 @@ public class ConsoleChat {
     }
 
     public static void main(String[] args) throws IOException {
-        //args: log.txt botAnswers.txt
-        //working directory: /Users/lan/IdeaProjects/job4j_design/src/data
         validateArgs(args);
         ConsoleChat cc = new ConsoleChat(path, botAnswers);
         cc.run();

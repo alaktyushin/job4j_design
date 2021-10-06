@@ -23,13 +23,3 @@ public class EvenNumberFile {
         }
     }
 }
-
-// file "even.txt":
-// 1
-// 5
-// 15
-// 17
-// 2
-// 4
-// 16
-// 19
