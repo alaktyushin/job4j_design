@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/Generics.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/Base.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/User.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/UserStore.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/Predator.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/Store.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/Tiger.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/Animal.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/RoleStore.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/generics/MemStore.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/tree/Tree.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/tree/SimpleTree.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/collection/SimpleQueue.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/collection/List.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/collection/SimpleStack.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/collection/SimpleSet.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/collection/ForwardLinkedRevert.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/collection/SimpleLinkedList.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/collection/Set.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/collection/ForwardLinked.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/hash/AutoNumber.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/it/MatrixIt.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/it/ListUtils.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/it/EvenIt.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/it/FlatMap.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/it/ArrayIt.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/it/BackwardArrayIt.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/SearchFiles.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/UsageLog4j.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/Matrix.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/CSVReader.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/LogFilter.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/ConsoleChat.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/Zip.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/EchoServer.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/ReadFile.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/ArgsName.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/UsageEncoding.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/Analyze.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/Config.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/Search.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/EvenNumberFile.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/scanner/ScannerExample1.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/scanner/ScannerExample2.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/scanner/ScannerExample3.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/duplicates/FileProperty.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/duplicates/DuplicatesVisitor.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/duplicates/DuplicatesFinder.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/io/Dir.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/question2/Info.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/question2/User.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/question2/Analyze.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/question/Info.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/question/User.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/question/Analyze.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/question00/Info.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/question00/User.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/question00/Analyze.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/map/Map.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/map/SimpleMap.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/map/User.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/map/UserMap.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/list/SimpleArrayList.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/list/List.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/java/ru/job4j/Trigger.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/tree/SimpleTreeTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/collection/SimpleStackTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/collection/SimpleLinkedListTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/collection/ForwardLinkedRevertTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/collection/SimpleSetTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/collection/ForwardLinkedTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/collection/SimpleQueueTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/it/FlatMapTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/it/BackwardArrayItTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/it/ListUtilsTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/it/ArrayItTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/it/EvenItTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/it/MatrixItTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/io/CSVReaderTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/io/ConfigTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/io/ArgsNameTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/io/AnalyzeTest.java">
+<error line="100" column="57" severity="error" message="Must have at least one statement." source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheck"/>
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/question2/AnalyzeTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/question/AnalyzeTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/question00/AnalyzeTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/map/SimpleMapTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/list/SimpleArrayListTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/test/java/ru/job4j/TriggerTest.java">
+</file>
+<file name="/Users/lan/IdeaProjects/job4j_design/src/main/resources/log4j.properties">
+</file>
+</checkstyle>
