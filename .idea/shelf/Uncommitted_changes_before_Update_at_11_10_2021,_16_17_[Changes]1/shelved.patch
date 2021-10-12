@@ -1,0 +1,178 @@
+Index: out/artifacts/find/log.txt
+===================================================================
+diff --git a/out/artifacts/find/log.txt b/out/artifacts/find/log.txt
+deleted file mode 100644
+--- a/out/artifacts/find/log.txt	(revision 7003d658b613287c51b1807abb14a579c8adb3c3)
++++ /dev/null	(revision 7003d658b613287c51b1807abb14a579c8adb3c3)
+@@ -1,77 +0,0 @@
+-
+-Search started on: Sat Oct 09 15:36:45 MSK 2021
+-
+-Search started on: Sat Oct 09 15:37:11 MSK 2021
+-
+-Search started on: Sat Oct 09 15:37:25 MSK 2021
+-
+-Search started on: Sat Oct 09 15:38:05 MSK 2021
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.it.BackwardArrayItTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.collection.SimpleLinkedListTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.it.FlatMapTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.it.ListUtilsTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.collection.SimpleSetTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.collection.SimpleStackTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.collection.ForwardLinkedRevertTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.TriggerTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.it.MatrixItTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.list.SimpleArrayListTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.question.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.map.SimpleMapTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.it.ArrayItTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.collection.SimpleQueueTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.question00.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.io.ConfigTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.collection.ForwardLinkedTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.it.EvenItTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.io.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.tree.SimpleTreeTest.txt
+-/Users/lan/IdeaProjects/temp/target/surefire-reports/ru.job4j.question2.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/temp/data/404.txt
+-/Users/lan/IdeaProjects/temp/data/target1.txt
+-/Users/lan/IdeaProjects/temp/data/target2.txt
+-/Users/lan/IdeaProjects/temp/data/tmp/matrix.txt
+-/Users/lan/IdeaProjects/temp/data/tmp/404.txt
+-/Users/lan/IdeaProjects/temp/data/tmp/target1.txt
+-/Users/lan/IdeaProjects/temp/data/tmp/target2.txt
+-/Users/lan/IdeaProjects/temp/data/tmp/log.txt
+-/Users/lan/IdeaProjects/temp/data/tmp/even.txt
+-/Users/lan/IdeaProjects/job4j_design/out/artifacts/find/log.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.BackwardArrayItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.ArgsNameTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleLinkedListTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.CSVReaderTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.FlatMapTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.ListUtilsTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleSetTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleStackTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.ForwardLinkedRevertTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.TriggerTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.MatrixItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.list.SimpleArrayListTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.question.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.map.SimpleMapTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.ArrayItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleQueueTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.question00.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.ConfigTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.ForwardLinkedTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.EvenItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.tree.SimpleTreeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.question2.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/data/404.txt
+-/Users/lan/IdeaProjects/job4j_design/data/target1.txt
+-/Users/lan/IdeaProjects/job4j_design/data/target2.txt
+-/Users/lan/IdeaProjects/job4j_design/data/log.txt
+-/Users/lan/IdeaProjects/job4j_design/data/copy.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/matrix.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/404.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/target1.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/target2.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/even.txt
+-/Users/lan/IdeaProjects/job4j_design/src/data/botAnswers.txt
+-/Users/lan/IdeaProjects/job4j_design/src/data/log.txt
+-/Users/lan/IdeaProjects/job4j_design/src/data/text.txt
+-/Users/lan/IdeaProjects/apache-maven-3.8.2/lib/ext/README.txt
+-/Users/lan/IdeaProjects/apache-maven-3.8.2/README.txt
+Index: data/log.txt
+===================================================================
+diff --git a/data/log.txt b/data/log.txt
+deleted file mode 100644
+--- a/data/log.txt	(revision 7003d658b613287c51b1807abb14a579c8adb3c3)
++++ /dev/null	(revision 7003d658b613287c51b1807abb14a579c8adb3c3)
+@@ -1,75 +0,0 @@
+-
+-Search started on: Sat Oct 09 15:29:06 MSK 2021
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.BackwardArrayItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.ArgsNameTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleLinkedListTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.CSVReaderTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.FlatMapTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.ListUtilsTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleSetTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleStackTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.ForwardLinkedRevertTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.TriggerTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.MatrixItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.list.SimpleArrayListTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.question.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.map.SimpleMapTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.ArrayItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleQueueTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.question00.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.ConfigTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.ForwardLinkedTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.EvenItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.tree.SimpleTreeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.question2.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/data/404.txt
+-/Users/lan/IdeaProjects/job4j_design/data/target1.txt
+-/Users/lan/IdeaProjects/job4j_design/data/target2.txt
+-/Users/lan/IdeaProjects/job4j_design/data/copy.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/matrix.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/404.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/target1.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/target2.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/even.txt
+-/Users/lan/IdeaProjects/job4j_design/src/data/botAnswers.txt
+-/Users/lan/IdeaProjects/job4j_design/src/data/log.txt
+-/Users/lan/IdeaProjects/job4j_design/src/data/text.txt
+-
+-Search started on: Sat Oct 09 15:31:23 MSK 2021
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.BackwardArrayItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.ArgsNameTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleLinkedListTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.CSVReaderTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.FlatMapTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.ListUtilsTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleSetTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleStackTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.ForwardLinkedRevertTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.TriggerTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.MatrixItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.list.SimpleArrayListTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.question.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.map.SimpleMapTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.ArrayItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.SimpleQueueTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.question00.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.ConfigTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.collection.ForwardLinkedTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.it.EvenItTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.io.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.tree.SimpleTreeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/target/surefire-reports/ru.job4j.question2.AnalyzeTest.txt
+-/Users/lan/IdeaProjects/job4j_design/data/404.txt
+-/Users/lan/IdeaProjects/job4j_design/data/target1.txt
+-/Users/lan/IdeaProjects/job4j_design/data/target2.txt
+-/Users/lan/IdeaProjects/job4j_design/data/log.txt
+-/Users/lan/IdeaProjects/job4j_design/data/copy.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/matrix.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/404.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/target1.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/target2.txt
+-/Users/lan/IdeaProjects/job4j_design/data/tmp/even.txt
+-/Users/lan/IdeaProjects/job4j_design/src/data/botAnswers.txt
+-/Users/lan/IdeaProjects/job4j_design/src/data/log.txt
+-/Users/lan/IdeaProjects/job4j_design/src/data/text.txt
+Index: sql/cars.drawio
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sql/cars.drawio b/sql/cars.drawio
+new file mode 100644
+--- /dev/null	(date 1633957355603)
++++ b/sql/cars.drawio	(date 1633957355603)
+@@ -0,0 +1,1 @@
++<mxfile host="app.diagrams.net" modified="2021-10-11T13:02:35.598Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="S4s0UW4dgjSTRr4xhWrY" version="15.5.0" type="device"><diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">7Zttb+I4EIB/DdLdh57yBiQfgbZ7lThpdUh33ftychOT+OrEyDEF9tefndh5waRFCyWLcIXUeDJx7JnHMxMHBu4s3X6hYJX8QSKIB44VbQfu/cBxbNcP+D8h2ZWSwHFLQUxRJJVqwQJ9h1JoSekaRTBvKTJCMEOrtjAkWQZD1pIBSsmmrbYkuH3XFYihJliEAOvSv1HEEim1R0F94neI4kTe2nfG5YkXEL7GlKwzeb+MZLA8kwLVjZxjnoCIbBoi92HgzighrDxKtzOIhVmVxcrrHjvOVkOmMGPHXDD2g5FtD4OlNYKBD/07W87hDeC1tEMIqBws2ynb5BuUYsCn5U4TlmIutPnhkmRsIZVEG2AUZ/w45KOBlAveIGWIW3giTzCy4tIwQTiagx1ZizHnjJtPtaYJoeg77xaoe/DTlElYnFFLYyGu5GKLSynMuc5XZQi7Es1BzqROSDAGqxy9VANOAY1RNiWMkVQqqZk+IoxnBBNaGMBdFn+iV+FnGClt5c+y/xSF8hiDF4inFRiqpwINMSlKXivKClM2bieVhHUfQYqwWE9/QRqBDCijl/awHd3/EglhebhtiCQPXyBJIaM7riLPer5kUy5b1dw01sBIypIG/rYrhUCuu7jqugaQH0gGj+SxGn/No9CdCBwhRRyLfTT5NFkby9K6+9bUDaxwxXDJOmHNVyBEWTwvdO69WvKnNIUQbRLE4ILLxZg2PDxyGeH9LXEBR4KiCGYFPAwwUPInKFkRlLHCfMMp/3CDzqzfhoMhn9eMt+26zT9CnbIZyfj8ACr8DTncGygAn+okdK/1j9mQLPAFdxQLSu+8KLgaCqlIOv8qIIQNDA2Xo2Ho9EnDUE9UpQMnhZSGichb1i+2Zf1qsLggFmO/TyxGGhYrkOfCCCZO9ASEbXk9EqHKkgNEmLL2dsrasfNjZa2KZudl0lS1nxafqvV+HVWt62goRIDBpzxfQ4mEaBsgLghEr4Wt1/GYY5LV7SQrx/vBPRhVaZ2XSM9kq88KTtVqv45s5elP3Sl4hdQ8WPWBQr95KtBQyEAKW/svZvPl0kj0uvky0pGAGU/mMDfFy+0WL24Q9Fm9jPX9n6J6MaXLicGpWu3XUbqM9T2X8rnKlC49oNBr6TLW91zKPGVY6IOFXmsWv5MFU7LcTMmy/52Xo0uWT3k74Os7gGa/5UzRqVru11G0+PrWm3nI7h2JSxYvz9+eHsYknDw9ZWvvn2d77t9FdwdeERS7cCZlXVPK0oA7kMWOfsqu2pdIWQehNG8JTglRH8DQHQZ+isR1cHj6V7FM7voZwOg9fenbxLbGAIxiqJIUt1FCYpIB/FBL90J6rTMnwssFNv9BxnYy6oI1I22ouA3p7lleXzS+iQb3jmzeb5sn73eyVY5VDPD92M3nQ9Y0hB11hzIvz5Qx7PzyQkcWoBADht7aIzi7o9RPcW7KL2qj8F2/lO/ET/BLcemEUrBrKMjgUff8lRSbUVXSt9pJ3xt5TR9/qG/bwR4T5QhqQqqpnADNLS5mtaX4LjR+R1y+0GJ2evWL3U+QdS+xmE/zy/AG14v6IknTL91PFed3DW/Wv7IsI1/9K1b34X8=</diagram></mxfile>
+\ No newline at end of file
