@@ -21,5 +21,8 @@ join people as p on dp.people_id=p.id
 group by p.name;
 
 /*Дополнить запрос п.4. условием, что средняя стоимость устройств должна быть больше 5000.*/
-select avg(price) from devices
-having avg(price) > 5000;
+select p.name, avg(d.price) from devices_people as dp
+join devices as d on dp.device_id=d.id
+join people as p on dp.people_id=p.id
+group by p.name
+having avg(d.price) > 5000;
