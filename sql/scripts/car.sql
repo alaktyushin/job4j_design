@@ -44,18 +44,18 @@ insert into car(name, body_id, engine_id, transmission_id) values ('car-7', 3, 1
 insert into car(name, body_id, engine_id, transmission_id) values ('car-8', 3, 2, 2);
 
 /*Вывести список всех машин и все привязанные к ним детали.*/
-select car.name name, b.type body, e.type engine, t.type transmission from car
-join body b on car.body_id = b.id
-join engine e on car.engine_id = e.id
-join transmission t on car.transmission_id = t.id
-group by car.name, b.type, e.type, t.type
-order by car.name asc;
+select c.name name, b.type body, e.type engine, t.type transmission from car c
+join body b on c.body_id = b.id
+join engine e on c.engine_id = e.id
+join transmission t on c.transmission_id = t.id
+group by c.name, b.type, e.type, t.type
+order by c.name asc;
 
 /*Вывести отдельно детали (1 деталь - 1 запрос),
 которые не используются НИ в одной машине, кузова, двигатели, коробки передач.*/
-select * from body b left join car on b.id = car.body_id
-where car.body_id is null;
-select * from engine e left join car on e.id = car.engine_id
-where car.engine_id is null;
-select * from transmission t left join car on t.id = car.transmission_id
-where car.transmission_id is null;
+select * from body b left join car c on b.id = c.body_id
+where c.body_id is null;
+select * from engine e left join car c on e.id = c.engine_id
+where c.engine_id is null;
+select * from transmission t left join car c on t.id = c.transmission_id
+where c.transmission_id is null;
