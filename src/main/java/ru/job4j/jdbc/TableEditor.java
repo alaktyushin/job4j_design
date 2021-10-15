@@ -8,7 +8,6 @@ import java.util.StringJoiner;
 
 public class TableEditor implements AutoCloseable {
 
-    private final String configFile = "./src/main/resources/app.properties";
     private final Properties properties;
     private Connection connection;
 
@@ -19,15 +18,13 @@ public class TableEditor implements AutoCloseable {
 
     private void initConnection() {
         try {
-            properties.load(new FileInputStream(configFile));
-            System.out.println("Properties loaded.");
             Class.forName(properties.getProperty("driver_class"));
             String url = properties.getProperty("url");
             String login = properties.getProperty("username");
             String password = properties.getProperty("password");
             connection = DriverManager.getConnection(url, login, password);
             System.out.println("Connection to database established.");
-        } catch (SQLException | ClassNotFoundException | IOException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
@@ -36,14 +33,13 @@ public class TableEditor implements AutoCloseable {
         try {
             Statement statement = connection.createStatement();
             statement.execute(query);
-            System.out.println("Query executed successfully: " + query );
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
     public void createTable(String tableName) {
-        String sql = "create table if not exists " + tableName +  "();";
+        String sql = String.format("create table if not exists %s();", tableName);
         executeSQLQuery(sql);
         System.out.println(getTableScheme(connection, tableName));
     }
@@ -54,19 +50,19 @@ public class TableEditor implements AutoCloseable {
     }
 
     public void addColumn(String tableName, String columnName, String type) {
-        String sql = "alter table " + tableName + " add column if not exists " + columnName + " " + type + ";";
+        String sql = String.format("alter table %s add column if not exists %s %s;", tableName, columnName, type);
         executeSQLQuery(sql);
         System.out.println(getTableScheme(connection, tableName));
     }
 
     public void dropColumn(String tableName, String columnName) {
-        String sql = "alter table " + tableName + " drop column if exists " + columnName + ";";
+        String sql = String.format("alter table %s drop column if exists %s;", tableName, columnName);
         executeSQLQuery(sql);
         System.out.println(getTableScheme(connection, tableName));
     }
 
     public void renameColumn(String tableName, String columnName, String newColumnName) {
-        String sql = "alter table " + tableName + " rename column " + columnName + " to " + newColumnName + ";";
+        String sql = String.format("alter table %s rename column %s to %s;", tableName, columnName, newColumnName);
         executeSQLQuery(sql);
         System.out.println(getTableScheme(connection, tableName));
     }
@@ -99,8 +95,12 @@ public class TableEditor implements AutoCloseable {
         }
     }
 
-    public static void main(String[] args) throws Exception {
-        TableEditor tableEditor = new TableEditor(new Properties());
+    public static void main(String[] args) throws IOException {
+        Properties cfg = new Properties();
+        try (FileInputStream in = new FileInputStream("./src/main/resources/app.properties")) {
+            cfg.load(in);
+        }
+        TableEditor tableEditor = new TableEditor(cfg);
         tableEditor.createTable("table1");
         tableEditor.addColumn("table1", "id", "serial");
         tableEditor.addColumn("table1", "name", "varchar(255)");
