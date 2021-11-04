@@ -61,3 +61,4 @@ public class WeakDemo {
         System.out.println("from queue " + queue.poll());
     }
 }
+
