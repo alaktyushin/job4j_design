@@ -40,9 +40,9 @@ public class UsersSizeOf {
 
     public static void main(String[] args) throws OutOfMemoryError {
         List<User> users = new LinkedList<>();
-        info();
+        /*info();*/
         /* Examples of empty objects memory*/
-        A a = new A();
+        /*A a = new A();
         System.out.println(ClassLayout.parseInstance(a).toPrintable());
         B b = new B();
         System.out.println(ClassLayout.parseInstance(b).toPrintable());
@@ -52,8 +52,18 @@ public class UsersSizeOf {
         System.out.println(ClassLayout.parseInstance(d).toPrintable());
         int[] aa = new int[0];
         System.out.println(ClassLayout.parseInstance(aa).toPrintable());
+        */
+        Object object = new Object();
+        System.out.println(ClassLayout.parseInstance(object).toPrintable());
+        User user1 = new User();
+        System.out.println(ClassLayout.parseInstance(user1).toPrintable());
+        User user2 = new User(1, "Aa");
+        System.out.println(ClassLayout.parseInstance(user2).toPrintable());
+        System.out.println(ClassLayout.parseInstance(user2.getAge()).toPrintable());
+        System.out.println(ClassLayout.parseInstance(user2.getName()).toPrintable());
+
         System.gc();
-        /* Examples of system GC*/
+        /* Examples of system GC
         info();
             for (int i = 0; i < 10000; i++) {
                 User user = new User(i, "User" + i);
@@ -61,5 +71,7 @@ public class UsersSizeOf {
                 ClassLayout.parseInstance(users).toPrintable();
                 info();
             }
+
+         */
     }
 }
