@@ -12,6 +12,9 @@ public class SoftWeakReferences {
         System.out.println(soft.get());
         System.out.println(weak.get());
 
+        String str = weak.get();
+        System.out.println(str);
+
         /* От изменения значения строковой переменной
         безопасные и слабые ссылки ссылаются на первоначальное значение */
         abc = String.valueOf(20002);
@@ -32,6 +35,10 @@ public class SoftWeakReferences {
         тут же удаляется и слабая */
         soft.clear();
         System.out.println(soft.get());
+        System.gc();
+        System.out.println(weak.get());
+
+        str = null;
         System.gc();
         System.out.println(weak.get());
     }
