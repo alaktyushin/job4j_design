@@ -29,7 +29,7 @@ public class TableEditor implements AutoCloseable {
         }
     }
 
-    private void executeSQLQuery (String query) {
+    private void executeSQLQuery(String query) {
         try {
             Statement statement = connection.createStatement();
             statement.execute(query);
@@ -44,7 +44,7 @@ public class TableEditor implements AutoCloseable {
         System.out.println(getTableScheme(connection, tableName));
     }
 
-    public void dropTable(String tableName){
+    public void dropTable(String tableName) {
         String sql = "drop table " + tableName +  ";";
         executeSQLQuery(sql);
     }

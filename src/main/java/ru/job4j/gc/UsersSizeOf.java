@@ -11,7 +11,8 @@ public class UsersSizeOf {
     private static final long MB = KB * KB;
     private static final Runtime ENVIRONMENT = Runtime.getRuntime();
 
-    public static class A {}
+    public static class A {
+    }
 
     public static class B {
         private int a;
