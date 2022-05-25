@@ -15,7 +15,7 @@ public class CacheFactory {
             dir = Path.of(jvm.get("dir")).toRealPath().toString();
             name = jvm.get("name");
         }
-        DirFileCache cache = new DirFileCache(dir);
+        AbstractCache cache = new DirFileCache(dir);
         cache.get(name);
         System.gc();
         cache.get(name);
