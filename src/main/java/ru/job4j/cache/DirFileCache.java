@@ -2,6 +2,9 @@ package ru.job4j.cache;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class DirFileCache extends AbstractCache<String, String> {
 
@@ -20,12 +23,8 @@ public class DirFileCache extends AbstractCache<String, String> {
         if (DirFileCache.this.get(key) == null) {
             System.out.println("Trying to load file from disk.");
             try (FileInputStream in = new FileInputStream(file)) {
-                StringBuilder text = new StringBuilder();
-                int read;
-                while ((read = in.read()) != -1) {
-                    text.append((char) read);
-                }
-                DirFileCache.this.put(key, text.toString());
+                String string = Files.readString(Path.of(cachingDir, key));
+                DirFileCache.this.put(key, string);
                 System.out.println(DirFileCache.this.get(key));
             } catch (Exception e) {
                 e.printStackTrace();

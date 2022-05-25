@@ -12,6 +12,8 @@ public class CacheFactory {
             AbstractCache cache = new DirFileCache(
                     Path.of(jvm.get("dir")).toRealPath().toString());
             cache.load(jvm.get("name"));
+            System.gc();
+            cache.load(jvm.get("name"));
         }
     }
 }

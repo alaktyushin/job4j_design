@@ -22,12 +22,8 @@ public class Emulator extends AbstractCache<String, String> {
                 String path = Path.of(cachingDir).toRealPath() + "/" + name;
                 System.out.println("Trying to load file from disk to cache...");
                 try (FileInputStream in = new FileInputStream(path)) {
-                    StringBuilder text = new StringBuilder();
-                    int read;
-                    while ((read = in.read()) != -1) {
-                        text.append((char) read);
-                    }
-                    Emulator.this.put(name, text.toString());
+                    String string = Files.readString(Path.of(cachingDir, name));
+                    Emulator.this.put(name, string);
                     System.out.println("File loaded.");
                 } catch (Exception e) {
                     e.printStackTrace();
