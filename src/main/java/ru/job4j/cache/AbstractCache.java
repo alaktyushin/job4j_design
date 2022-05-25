@@ -13,8 +13,19 @@ public abstract class AbstractCache<K, V> {
     }
 
     public V get(K key) {
-        V rsl = (cache.get(key) != null ? cache.get(key).get() : null);
-        return rsl;
+        SoftReference<V> v = cache.getOrDefault(key, null);
+        V value;
+        if (v != null) {
+            value = v.get();
+            System.out.println("value already in cache:");
+        } else {
+            value = load(key);
+            put(key, value);
+            System.out.println("value first loaded from disk:");
+        }
+        System.out.println(value);
+        System.out.println();
+        return value;
     }
 
     protected abstract V load(K key);

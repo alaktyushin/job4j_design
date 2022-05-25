@@ -6,14 +6,18 @@ import java.nio.file.Path;
 public class CacheFactory {
     public static void main(String[] args) throws IOException {
         ArgsName jvm = ArgsName.of(args);
+        String dir;
+        String name;
         if (jvm.get("dir") == null || jvm.get("name") == null) {
-            AbstractCache cache = new Emulator("./data/txt");
+            dir = Emulator.getDir();
+            name = Emulator.getName();
         } else {
-            AbstractCache cache = new DirFileCache(
-                    Path.of(jvm.get("dir")).toRealPath().toString());
-            cache.load(jvm.get("name"));
-            System.gc();
-            cache.load(jvm.get("name"));
+            dir = Path.of(jvm.get("dir")).toRealPath().toString();
+            name = jvm.get("name");
         }
+        DirFileCache cache = new DirFileCache(dir);
+        cache.get(name);
+        System.gc();
+        cache.get(name);
     }
 }
