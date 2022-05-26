@@ -24,7 +24,6 @@ public class DirFileCache extends AbstractCache<String, String> {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        put(key, string);
         return string;
     }
 

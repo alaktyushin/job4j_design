@@ -13,18 +13,14 @@ public abstract class AbstractCache<K, V> {
     }
 
     public V get(K key) {
-        SoftReference<V> v = cache.getOrDefault(key, null);
-        V value;
-        if (v != null) {
-            value = v.get();
-            System.out.println("value already in cache:");
-        } else {
+        V value = cache.getOrDefault(key, new SoftReference<>(null)).get();
+        if (value == null) {
             value = load(key);
             put(key, value);
             System.out.println("value first loaded from disk:");
+        } else {
+            System.out.println("value already in cache:");
         }
-        System.out.println(value);
-        System.out.println();
         return value;
     }
 

@@ -16,8 +16,9 @@ public class CacheFactory {
             name = jvm.get("name");
         }
         AbstractCache cache = new DirFileCache(dir);
-        cache.get(name);
+        System.out.println(cache.get(name));
+        System.out.println();
         System.gc();
-        cache.get(name);
+        System.out.println(cache.get(name));
     }
 }
