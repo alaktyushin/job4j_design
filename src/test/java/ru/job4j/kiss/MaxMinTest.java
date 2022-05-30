@@ -69,7 +69,6 @@ public class MaxMinTest {
         list.add("2");
         list.add("333");
         list.add("a2");
-        //assertThat(maxMin.max(list, (a, b) -> a.compareTo(b)), is ("1"));
         assertThat(maxMin.min(list, String::compareTo), is ("1"));
     }
 }
