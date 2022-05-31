@@ -40,4 +40,55 @@ public class CinemaTest {
         List<Session> sessions = cinema.find(session -> true);
         assertThat(sessions, is(Arrays.asList(new Session3D())));
     }
+
+    @Ignore
+    @Test(expected = IllegalArgumentException.class)
+    public void whenInvalidSeat() {
+        Account account = new AccountCinema();
+        Cinema cinema = new Cinema3D();
+        Calendar date = Calendar.getInstance();
+        date.set(2020, 10, 10, 23, 00);
+        Ticket ticketValid = cinema.buy(account, 1, 1, date);
+        Ticket ticketInvalid = cinema.buy(account, -1, 1, date);
+    }
+
+    @Ignore
+    @Test(expected = IllegalArgumentException.class)
+    public void whenInvalidCalendarDate() {
+        Account account = new AccountCinema();
+        Cinema cinema = new Cinema3D();
+        Calendar date = Calendar.getInstance();
+        date.set(2020, 2, 30, 23, 00);
+    }
+
+    @Ignore
+    @Test(expected = IllegalArgumentException.class)
+    public void whenNonWorkingDate() {
+        Account account = new AccountCinema();
+        Cinema cinema = new Cinema3D();
+        Calendar date = Calendar.getInstance();
+        date.set(2020, 1, 1, 23, 00);
+        Ticket ticket = cinema.buy(account, 1, 1, date);
+    }
+
+    @Ignore
+    @Test(expected = IllegalArgumentException.class)
+    public void whenNonWorkingHours() {
+        Account account = new AccountCinema();
+        Cinema cinema = new Cinema3D();
+        Calendar date = Calendar.getInstance();
+        date.set(2020, 10, 10, 3, 00);
+        Ticket ticket = cinema.buy(account, 1, 1, date);
+    }
+
+    @Ignore
+    @Test(expected = IllegalArgumentException.class)
+    public void whenSeatIsOccupied() {
+        Account account = new AccountCinema();
+        Cinema cinema = new Cinema3D();
+        Calendar date = Calendar.getInstance();
+        date.set(2020, 10, 10, 23, 00);
+        Ticket ticketValid = cinema.buy(account, 1, 1, date);
+        Ticket ticketInvalid = cinema.buy(account, 1, 1, date);
+    }
 }
