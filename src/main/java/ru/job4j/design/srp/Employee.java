@@ -7,9 +7,9 @@ public class Employee {
     private String name;
     private Calendar hired;
     private Calendar fired;
-    private Salary salary;
+    private double salary;
 
-    public Employee(String name, Calendar hired, Calendar fired, Salary salary) {
+    public Employee(String name, Calendar hired, Calendar fired, double salary) {
         this.name = name;
         this.hired = hired;
         this.fired = fired;
@@ -28,17 +28,24 @@ public class Employee {
         return hired;
     }
 
+    public void setHired(Calendar hired) {
+        this.hired = hired;
+    }
+
     public Calendar getFired() {
         return fired;
     }
 
-    public Salary getSalary() {
+    public void setFired(Calendar fired) {
+        this.fired = fired;
+    }
+
+    public double getSalary() {
         return salary;
     }
 
-    public double getSalaryAmmount() {
-        Salary s = getSalary();
-        return s.getAmmount();
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     @Override
