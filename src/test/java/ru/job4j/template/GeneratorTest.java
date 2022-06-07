@@ -26,7 +26,8 @@ public class GeneratorTest {
         Generator generator = new TemplateGenerator();
         String template = "I am a ${name}, Who are ${subject}?";
         Map<String, String> map = new HashMap<>();
-        map.put("Petr Arsentev", "you");
+        map.put("name", "Petr Arsentev");
+        map.put("subject", "you");
         assertThat(generator.produce(template, map), is ("I am a Petr Arsentev, Who are you?"));
     }
 
@@ -36,7 +37,8 @@ public class GeneratorTest {
         Generator generator = new TemplateGenerator();
         String template = "I am a ${name} ${family_name}, Who are ${subject}?";
         Map<String, String> map = new HashMap<>();
-        map.put("Petr Arsentev", "you");
+        map.put("name", "Petr Arsentev");
+        map.put("subject", "you");
         assertThat(generator.produce(template, map), is ("I am a Petr Arsentev, Who are you?"));
     }
 
@@ -46,8 +48,8 @@ public class GeneratorTest {
         Generator generator = new TemplateGenerator();
         String template = "I am a ${name}, Who are ${subject}?";
         Map<String, String> map = new HashMap<>();
-        map.put("Petr Arsentev", "you");
-        map.put("Petr Arsentev", "your");
+        map.put("name", "Petr Arsentev");
+        map.put("subj", "you");
         assertThat(generator.produce(template, map), is ("I am a Petr Arsentev, Who are you?"));
     }
 }
