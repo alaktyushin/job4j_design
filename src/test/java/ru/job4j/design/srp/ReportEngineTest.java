@@ -29,28 +29,42 @@ public class ReportEngineTest {
     public void whenHTMLGenerated() {
         MemStore store = new MemStore();
         Calendar now = Calendar.getInstance();
-        Employee worker = new Employee("Ivan", now, now, 100);
-        store.add(worker);
+        Employee worker1 = new Employee("Ivan", now, now, 100);
+        store.add(worker1);
+        Employee worker2 = new Employee("Petr", now, now, 400);
+        store.add(worker2);
         Report engine = new ReportHTML(store);
         StringBuilder expect = new StringBuilder()
-                .append("""
-                        <!doctype html>
-                        <html lang="ru">
-                        <head>
-                          <meta charset="utf-8">
-                          <title>Job4j</title>
-                        </head>
-                        <body>
-                        """)
+                .append("!DOCTYPE HTML")
+                .append(System.lineSeparator())
+                .append("<html lang=\"ru\">")
+                .append(System.lineSeparator())
+                .append("<head>")
+                .append(System.lineSeparator())
+                .append("<meta charset=\"utf-8>")
+                .append(System.lineSeparator())
+                .append("<title>Job4j</title>")
+                .append(System.lineSeparator())
+                .append("</head>")
+                .append(System.lineSeparator())
+                .append("<body>")
+                .append(System.lineSeparator())
                 .append("  <").append("Name; Hired; Fired; Salary;").append(">")
                 .append(System.lineSeparator())
-                .append("  <").append(worker.getName()).append("; ")
-                .append(worker.getHired()).append("; ")
-                .append(worker.getFired()).append("; ")
-                .append(worker.getSalary()).append(";")
+                .append("  <").append(worker1.getName()).append("; ")
+                .append(worker1.getHired()).append("; ")
+                .append(worker1.getFired()).append("; ")
+                .append(worker1.getSalary()).append("; ")
                 .append(System.lineSeparator())
-                .append("</body>\n" +
-                        "</html>");
+                .append("  <").append(worker2.getName()).append("; ")
+                .append(worker2.getHired()).append("; ")
+                .append(worker2.getFired()).append("; ")
+                .append(worker2.getSalary()).append("; ")
+                .append(System.lineSeparator())
+                .append("</body>")
+                .append(System.lineSeparator())
+                .append("</html>")
+                .append(System.lineSeparator());
         assertThat(engine.generate(em -> true), is(expect.toString()));
     }
 
@@ -67,7 +81,7 @@ public class ReportEngineTest {
                 .append(worker.getName()).append(";")
                 .append(worker.getHired()).append(";")
                 .append(worker.getFired()).append(";")
-                .append(worker.getSalary() * engine.getConvertToUSD()).append(";")
+                .append(worker.getSalary() * engine.convertToUSD).append(";")
                 .append(System.lineSeparator());
         assertThat(engine.generate(em -> true), is(expect.toString()));
     }
