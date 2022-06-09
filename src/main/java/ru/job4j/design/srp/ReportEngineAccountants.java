@@ -4,7 +4,7 @@ import java.util.function.Predicate;
 
 public class ReportEngineAccountants implements Report {
 
-    public final double CONVERT_TO_USD = 1 / 87.03;
+    public static final double CONVERT_TO_USD = 87.03;
 
     private Store store;
 
@@ -21,7 +21,7 @@ public class ReportEngineAccountants implements Report {
             text.append(employee.getName()).append(";")
                     .append(employee.getHired()).append(";")
                     .append(employee.getFired()).append(";")
-                    .append(employee.getSalary() * CONVERT_TO_USD).append(";")
+                    .append(employee.getSalary() / CONVERT_TO_USD).append(";")
                     .append(System.lineSeparator());
         }
         return text.toString();
