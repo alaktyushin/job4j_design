@@ -1,12 +1,23 @@
 package ru.job4j.design.srp;
 
+import jakarta.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
 import java.util.Calendar;
 import java.util.Objects;
 
+@XmlRootElement(name = "employee")
+@XmlAccessorType(XmlAccessType.PROPERTY)
+@XmlType(propOrder = { "name", "hired", "fired", "salary" })
+//@JsonPropertyOrder({ "name", "hired", "fired", "salary" })
 public class Employee {
+
     private String name;
+
     private Calendar hired;
+
     private Calendar fired;
+
     private double salary;
 
     public Employee(String name, Calendar hired, Calendar fired, double salary) {
@@ -14,6 +25,9 @@ public class Employee {
         this.hired = hired;
         this.fired = fired;
         this.salary = salary;
+    }
+
+    public Employee() {
     }
 
     public String getName() {
@@ -24,6 +38,7 @@ public class Employee {
         this.name = name;
     }
 
+    @XmlJavaTypeAdapter(DateAdapterXML.class)
     public Calendar getHired() {
         return hired;
     }
@@ -32,6 +47,7 @@ public class Employee {
         this.hired = hired;
     }
 
+    @XmlJavaTypeAdapter(DateAdapterXML.class)
     public Calendar getFired() {
         return fired;
     }
