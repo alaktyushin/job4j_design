@@ -9,7 +9,6 @@ import java.util.Objects;
 @XmlRootElement(name = "employee")
 @XmlAccessorType(XmlAccessType.PROPERTY)
 @XmlType(propOrder = { "name", "hired", "fired", "salary" })
-//@JsonPropertyOrder({ "name", "hired", "fired", "salary" })
 public class Employee {
 
     private String name;
