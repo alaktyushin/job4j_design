@@ -6,8 +6,6 @@ import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Calendar;
 import java.util.Objects;
 
-@XmlRootElement(name = "employee")
-@XmlAccessorType(XmlAccessType.PROPERTY)
 @XmlType(propOrder = { "name", "hired", "fired", "salary" })
 public class Employee {
 
